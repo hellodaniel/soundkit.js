@@ -1,7 +1,6 @@
 
 (function ( $ ) {
     
-
         
         function addSource(elem, path) {
             
@@ -22,7 +21,6 @@
             var soundfile = $(this).attr('soundOnHover');
             
             var audio = $('<audio />', {
-               autoPlay : 'false',
                id: 'sound-'+soundfile,
                volume: 0.5
              });
@@ -43,7 +41,6 @@
             var soundfile = $(this).attr('soundOnLoad');
             
             var audio = $('<audio />', {
-               autoPlay : 'false',
                id: 'sound-'+soundfile
              });
             addSource(audio, 'audio/'+soundfile+'.mp3');
@@ -63,7 +60,6 @@
             var soundfile = $(this).attr('soundOnClick');
             
             var audio = $('<audio />', {
-               autoPlay : 'false',
                id: 'sound-'+soundfile,
                volume: 0.8
              });
