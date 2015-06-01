@@ -109,4 +109,10 @@ Complete example:
  * Script tag must be placed after jQuery and after any objects containing tags to be loaded. 
 
 ## Attribution
-Sounds used in this kit were created by Fran at [narfstuff.co.uk](http://www.narfstuff.co.uk/2009/09/13/royalty-free-ui-sound-pack-now-free/) (currently pending re-distribution permission). 
+
+ * Script based on [Jeffrey Way's](http://code.tutsplus.com/tutorials/quick-tip-the-html-5-audio-element--net-9672) audio element tips.
+ * Sounds used in this kit were created by Fran at [narfstuff.co.uk](http://www.narfstuff.co.uk/2009/09/13/royalty-free-ui-sound-pack-now-free/) 
+
+## To do
+ * Remove jQuery dependency some day... 
+ 
