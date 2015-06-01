@@ -10,11 +10,11 @@ jQuery/HTML5 sound UI kit for web applications
         <script type="text/js" src="soundkit.min.js" />
   </body>
   ```
-2. Add one of the following attributes to the element that you want the sound to be attched to: 
+2. Add one of the following attributes to the element that you want the sound to be attached to: 
 
-  * `soundOnHover`
-  * `soundOnClick`
-  * `soundOnLoad`
+  * `data-sound-hover`
+  * `data-sound-click`
+  * `data-sound-load`
 
 
 3. Lastly, you need to tell it which sound to play: 
@@ -95,7 +95,7 @@ Complete example:
 
   ```html
   <body>
-  	<div class="alert alert-success" soundOnLoad="confirm-echo2">Well done!</div>
+  	<div class="alert alert-success" data-sound-load="confirm-echo2">Well done!</div>
         
         ...
         

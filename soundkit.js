@@ -15,10 +15,10 @@
         
         
         
-        $('*[soundOnHover]').each( function() { 
+        $('*[data-sound-hover]').each( function() { 
           
           
-            var soundfile = $(this).attr('soundOnHover');
+            var soundfile = $(this).data('sound-hover');
             
             var audio = $('<audio />', {
                id: 'sound-'+soundfile,
@@ -36,9 +36,9 @@
         }); 
         
         
-        $('*[soundOnLoad]').each( function() { 
+        $('*[data-sound-load]').each( function() { 
             
-            var soundfile = $(this).attr('soundOnLoad');
+            var soundfile = $(this).data('sound-load');
             
             var audio = $('<audio />', {
                id: 'sound-'+soundfile
@@ -54,10 +54,10 @@
         
         
         
-        $('*[soundOnClick]').each( function() { 
+        $('*[data-sound-click]').each( function() { 
           
           
-            var soundfile = $(this).attr('soundOnClick');
+            var soundfile = $(this).data('sound-click');
             
             var audio = $('<audio />', {
                id: 'sound-'+soundfile,
