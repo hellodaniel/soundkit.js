@@ -1,12 +1,23 @@
 # soundkit.js
-jQuery/HTML5 sound UI kit for web applications
+jQuery/HTML5 sound UI kit for web applications. 
 
+## Why
+Subtle responses to web interactions can be useful and provide a richer user experience. It's that simple. The web has been quiet for too long. 
+
+## Requirements
+ * Requires jQuery (any version)
+ * Script tag must be placed after jQuery and after any objects containing tags to be loaded
+ 
 ##Basic Usage
 1. Include the javascript file as close to the end of your `<body>` as possible
 
   ```html
   <body>
+        <div class="alert alert-success" data-sound-load="alert-echo">Success!</div>
+        
         ...
+        
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script type="text/js" src="soundkit.min.js" />
   </body>
   ```
@@ -90,23 +101,6 @@ jQuery/HTML5 sound UI kit for web applications
   * whoosh6
   * whoosh7
 
-
-Complete example:
-
-  ```html
-  <body>
-  	<div class="alert alert-success" data-sound-load="confirm-echo2">Well done!</div>
-        
-        ...
-        
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script type="text/js" src="soundkit.min.js" />
-  </body>
-  ```
-  
-## Requirements
- * Requires jQuery (any version)
- * Script tag must be placed after jQuery and after any objects containing tags to be loaded. 
 
 ## Attribution
 
