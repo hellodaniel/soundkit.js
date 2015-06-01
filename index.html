@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Soundkit.js by hellodaniel</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Soundkit.js</h1>
+          <h2>jQuery/HTML5 sound UI kit for web applications</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/hellodaniel/soundkit.js/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/hellodaniel/soundkit.js/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/hellodaniel/soundkit.js" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>
+<a id="soundkitjs" class="anchor" href="#soundkitjs" aria-hidden="true"><span class="octicon octicon-link"></span></a>soundkit.js</h1>
+
+<p>jQuery/HTML5 sound UI kit for web applications</p>
+
+<h2>
+<a id="basic-usage" class="anchor" href="#basic-usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Basic Usage</h2>
+
+<ol>
+<li>
+<p>Include the javascript file as close to the end of your <code>&lt;body&gt;</code> as possible</p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">body</span>&gt;
+      ...
+      &lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/js<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>soundkit.min.js<span class="pl-pds">"</span></span> /&gt;
+&lt;/<span class="pl-ent">body</span>&gt;</pre></div>
+</li>
+<li>
+<p>Add one of the following attributes to the element that you want the sound to be attached to: </p>
+
+<ul>
+<li><code>data-sound-hover</code></li>
+<li><code>data-sound-click</code></li>
+<li><code>data-sound-load</code></li>
+</ul>
+</li>
+<li>
+<p>Lastly, you need to tell it which sound to play: </p>
+
+<ul>
+<li>alert-click</li>
+<li>alert-echo</li>
+<li>alert-electric</li>
+<li>alert-flick</li>
+<li>alert-triangle</li>
+<li>alert-wobble</li>
+<li>click-analogue</li>
+<li>click-analogue2</li>
+<li>click-analogue3</li>
+<li>click-blip</li>
+<li>click-footfall</li>
+<li>click-melodic</li>
+<li>click-melodic2</li>
+<li>click-pistachio</li>
+<li>click-pistachio2</li>
+<li>click-pistachio3</li>
+<li>click-pop</li>
+<li>click-retro</li>
+<li>click-round-pop</li>
+<li>click-round-pop2</li>
+<li>click-round-pop3</li>
+<li>click-silly</li>
+<li>click-simple</li>
+<li>click-simple-double</li>
+<li>click-simple-resonant</li>
+<li>click-woody</li>
+<li>confirm-bass</li>
+<li>confirm-blip</li>
+<li>confirm-detuned</li>
+<li>confirm-echo</li>
+<li>confirm-echo2</li>
+<li>confirm-melodic</li>
+<li>confirm-melodic2</li>
+<li>confirm-melodic3</li>
+<li>confirm-melodic4</li>
+<li>confirm-melodic5</li>
+<li>confirm-retro</li>
+<li>confirm-techy</li>
+<li>confirm-techy2</li>
+<li>confirm-xylophone</li>
+<li>confirm-xylophone2</li>
+<li>deny-analogue</li>
+<li>deny-bass</li>
+<li>deny-bass2</li>
+<li>deny-bass3</li>
+<li>deny-bass4</li>
+<li>deny-echo</li>
+<li>deny-electric</li>
+<li>deny-electric2</li>
+<li>deny-jar</li>
+<li>deny-note</li>
+<li>deny-retro</li>
+<li>hover-doubleclick</li>
+<li>hover-metallic</li>
+<li>hover-pop</li>
+<li>hover-sub-bass</li>
+<li>hover-sub-bass2</li>
+<li>hover</li>
+<li>hover2</li>
+<li>hover3</li>
+<li>hover4</li>
+<li>hover5</li>
+<li>whoosh-sub-bass</li>
+<li>whoosh</li>
+<li>whoosh2</li>
+<li>whoosh3</li>
+<li>whoosh4</li>
+<li>whoosh5</li>
+<li>whoosh6</li>
+<li>whoosh7</li>
+</ul>
+</li>
+</ol>
+
+<p>Complete example:</p>
+
+<div class="highlight highlight-html"><pre>  &lt;<span class="pl-ent">body</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>alert alert-success<span class="pl-pds">"</span></span> <span class="pl-e">data-sound-load</span>=<span class="pl-s"><span class="pl-pds">"</span>confirm-echo2<span class="pl-pds">"</span></span>&gt;Well done!&lt;/<span class="pl-ent">div</span>&gt;
+
+        ...
+
+<span class="pl-s1">    &lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span>
+    &lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/js<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>soundkit.min.js<span class="pl-pds">"</span></span> /&gt;
+  &lt;/<span class="pl-ent">body</span>&gt;</pre></div>
+
+<h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements</h2>
+
+<ul>
+<li>Requires jQuery (any version)</li>
+<li>Script tag must be placed after jQuery and after any objects containing tags to be loaded. </li>
+</ul>
+
+<h2>
+<a id="attribution" class="anchor" href="#attribution" aria-hidden="true"><span class="octicon octicon-link"></span></a>Attribution</h2>
+
+<p>Sounds used in this kit were created by Fran at <a href="http://www.narfstuff.co.uk/2009/09/13/royalty-free-ui-sound-pack-now-free/">narfstuff.co.uk</a> (currently pending re-distribution permission). </p>
+        </section>
+
+        <footer>
+          Soundkit.js is maintained by <a href="https://github.com/hellodaniel">hellodaniel</a><br>
+          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
