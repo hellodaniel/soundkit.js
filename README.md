@@ -37,13 +37,13 @@ jQuery/HTML5 sound UI kit for web applications
   * click-pistachio3
   * click-pop
   * click-retro
-  * click-round_pop
-  * click-round_pop2
-  * click-round_pop3
+  * click-round-pop
+  * click-round-pop2
+  * click-round-pop3
   * click-silly
   * click-simple
-  * click-simple_double
-  * click-simple_resonant
+  * click-simple-double
+  * click-simple-resonant
   * click-woody
   * confirm-bass
   * confirm-blip
@@ -106,7 +106,7 @@ Complete example:
   
 ## Requirements
  * Requires jQuery (any version)
- * Script tag must be placed after jQuery and after any objects containing tags to be loaded (read: right at the end)
+ * Script tag must be placed after jQuery and after any objects containing tags to be loaded. 
 
 ## Attribution
-Sounds supplied by Fran at [narfstuff.co.uk](http://www.narfstuff.co.uk/2009/09/13/royalty-free-ui-sound-pack-now-free/)
+Sounds used in this kit were created by Fran at [narfstuff.co.uk](http://www.narfstuff.co.uk/2009/09/13/royalty-free-ui-sound-pack-now-free/) (currently pending re-distribution permission). 
