@@ -1,4 +1,7 @@
 
+// jQuery based soundkit for web application UIs by @hellodaniel
+// http://hellodaniel.github.io/soundkit.js
+
 (function ( $ ) {
     
         
