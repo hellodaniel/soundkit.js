@@ -3,14 +3,33 @@
 // http://hellodaniel.github.io/soundkit.js
 
 (function ( $ ) {
-    
         
-        function addSource(elem, path) {
+        
+        var scriptEls = document.getElementsByTagName( 'script' );
+        var thisScriptEl = scriptEls[scriptEls.length - 1];
+        var scriptPath = thisScriptEl.src;
+        var scriptFolder = scriptPath.substr(0, scriptPath.lastIndexOf( '/' )+1 );
+        
+       
+        
+        $.soundkit = function(soundfile) {
+         
+            var audio = $('<audio />', {
+               id: 'sound-'+soundfile,
+               volume: 0.8,
+               autoplay: 'autoplay'
+             });
+            soundkitAddSource(audio, 'audio/'+soundfile+'.mp3');
+            soundkitAddSource(audio, 'audio/'+soundfile+'.ogg');
+            audio.appendTo('body');  
             
-            var scriptEls = document.getElementsByTagName( 'script' );
-            var thisScriptEl = scriptEls[scriptEls.length - 1];
-            var scriptPath = thisScriptEl.src;
-            var scriptFolder = scriptPath.substr(0, scriptPath.lastIndexOf( '/' )+1 );
+     
+        };
+        
+        
+        
+        
+        function soundkitAddSource(elem, path) {
             
             $('<source>').attr('src', scriptFolder + path).appendTo(elem);
             
@@ -20,15 +39,14 @@
         
         $('*[data-sound-hover]').each( function() { 
           
-          
             var soundfile = $(this).data('sound-hover');
             
             var audio = $('<audio />', {
                id: 'sound-'+soundfile,
                volume: 0.5
              });
-            addSource(audio, 'audio/'+soundfile+'.mp3');
-            addSource(audio, 'audio/'+soundfile+'.ogg');
+            soundkitAddSource(audio, 'audio/'+soundfile+'.mp3');
+            soundkitAddSource(audio, 'audio/'+soundfile+'.ogg');
             audio.appendTo('body');  
             
             $(this).mouseenter(
@@ -46,8 +64,8 @@
             var audio = $('<audio />', {
                id: 'sound-'+soundfile
              });
-            addSource(audio, 'audio/'+soundfile+'.mp3');
-            addSource(audio, 'audio/'+soundfile+'.ogg');
+            soundkitAddSource(audio, 'audio/'+soundfile+'.mp3');
+            soundkitAddSource(audio, 'audio/'+soundfile+'.ogg');
             audio.appendTo('body');  
             
             // We need to add a little delay or it will trigger before the DOM can find it... 
@@ -66,8 +84,8 @@
                id: 'sound-'+soundfile,
                volume: 0.8
              });
-            addSource(audio, 'audio/'+soundfile+'.mp3');
-            addSource(audio, 'audio/'+soundfile+'.ogg');
+            soundkitAddSource(audio, 'audio/'+soundfile+'.mp3');
+            soundkitAddSource(audio, 'audio/'+soundfile+'.ogg');
             audio.appendTo('body');  
             
             $(this).on('click', 
@@ -76,7 +94,8 @@
                 }); 
             
         }); 
-    
-
+        
+        
+        
     
 }( jQuery ));
