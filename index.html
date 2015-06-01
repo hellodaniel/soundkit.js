@@ -22,7 +22,20 @@
       <h1>
 <a id="soundkitjs" class="anchor" href="#soundkitjs" aria-hidden="true"><span class="octicon octicon-link"></span></a>soundkit.js</h1>
 
-<p>jQuery/HTML5 sound UI kit for web applications</p>
+<p>jQuery/HTML5 sound UI kit for web applications. </p>
+
+<h2>
+<a id="why" class="anchor" href="#why" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why</h2>
+
+<p>Subtle responses to web interactions can be useful and provide a richer user experience. It's that simple. The web has been quiet for too long. </p>
+
+<h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements</h2>
+
+<ul>
+<li>Requires jQuery (any version)</li>
+<li>Script tag must be placed after jQuery and after any objects containing tags to be loaded</li>
+</ul>
 
 <h2>
 <a id="basic-usage" class="anchor" href="#basic-usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Basic Usage</h2>
@@ -32,7 +45,11 @@
 <p>Include the javascript file as close to the end of your <code>&lt;body&gt;</code> as possible</p>
 
 <div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">body</span>&gt;
+      &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>alert alert-success<span class="pl-pds">"</span></span> <span class="pl-e">data-sound-load</span>=<span class="pl-s"><span class="pl-pds">"</span>alert-echo<span class="pl-pds">"</span></span>&gt;Success!&lt;/<span class="pl-ent">div</span>&gt;
+
       ...
+
+<span class="pl-s1">      &lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span>
       &lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/js<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>soundkit.min.js<span class="pl-pds">"</span></span> /&gt;
 &lt;/<span class="pl-ent">body</span>&gt;</pre></div>
 </li>
@@ -123,29 +140,20 @@
 </li>
 </ol>
 
-<p>Complete example:</p>
-
-<div class="highlight highlight-html"><pre>  &lt;<span class="pl-ent">body</span>&gt;
-    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>alert alert-success<span class="pl-pds">"</span></span> <span class="pl-e">data-sound-load</span>=<span class="pl-s"><span class="pl-pds">"</span>confirm-echo2<span class="pl-pds">"</span></span>&gt;Well done!&lt;/<span class="pl-ent">div</span>&gt;
-
-        ...
-
-<span class="pl-s1">    &lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span>
-    &lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/js<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>soundkit.min.js<span class="pl-pds">"</span></span> /&gt;
-  &lt;/<span class="pl-ent">body</span>&gt;</pre></div>
-
-<h2>
-<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements</h2>
-
-<ul>
-<li>Requires jQuery (any version)</li>
-<li>Script tag must be placed after jQuery and after any objects containing tags to be loaded. </li>
-</ul>
-
 <h2>
 <a id="attribution" class="anchor" href="#attribution" aria-hidden="true"><span class="octicon octicon-link"></span></a>Attribution</h2>
 
-<p>Sounds used in this kit were created by Fran at <a href="http://www.narfstuff.co.uk/2009/09/13/royalty-free-ui-sound-pack-now-free/">narfstuff.co.uk</a> (currently pending re-distribution permission). </p>
+<ul>
+<li>Script based on <a href="http://code.tutsplus.com/tutorials/quick-tip-the-html-5-audio-element--net-9672">Jeffrey Way's</a> audio element tips.</li>
+<li>Sounds used in this kit were created by Fran at <a href="http://www.narfstuff.co.uk/2009/09/13/royalty-free-ui-sound-pack-now-free/">narfstuff.co.uk</a> </li>
+</ul>
+
+<h2>
+<a id="to-do" class="anchor" href="#to-do" aria-hidden="true"><span class="octicon octicon-link"></span></a>To do</h2>
+
+<ul>
+<li>Remove jQuery dependency some day... </li>
+</ul>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/hellodaniel/soundkit.js">Soundkit.js</a> is maintained by <a href="https://github.com/hellodaniel">hellodaniel</a>.</span>
