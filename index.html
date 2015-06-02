@@ -8,6 +8,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   </head>
   <body>
     <section class="page-header">
@@ -19,14 +20,9 @@
     </section>
 
     <section class="main-content">
-      <h1>
-<a id="soundkitjs" class="anchor" href="#soundkitjs" aria-hidden="true"><span class="octicon octicon-link"></span></a>soundkit.js</h1>
+     
 
-<p>jQuery/HTML5 sound UI kit for web applications. </p>
-
-<h2>
-<a id="why" class="anchor" href="#why" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why</h2>
-
+    
 <p>Subtle responses to web interactions can be useful and provide a richer user experience. It's that simple. The web has been quiet for too long. </p>
 
 <h2>
@@ -63,80 +59,100 @@
 </ul>
 </li>
 <li>
-<p>Lastly, you need to tell it which sound to play: </p>
+<p>Lastly, you need to tell it which sound to play (click to demo): </p>
 
-<ul>
-<li>alert-click</li>
-<li>alert-echo</li>
-<li>alert-electric</li>
-<li>alert-flick</li>
-<li>alert-triangle</li>
-<li>alert-wobble</li>
-<li>click-analogue</li>
-<li>click-analogue2</li>
-<li>click-analogue3</li>
-<li>click-blip</li>
-<li>click-footfall</li>
-<li>click-melodic</li>
-<li>click-melodic2</li>
-<li>click-pistachio</li>
-<li>click-pistachio2</li>
-<li>click-pistachio3</li>
-<li>click-pop</li>
-<li>click-retro</li>
-<li>click-round-pop</li>
-<li>click-round-pop2</li>
-<li>click-round-pop3</li>
-<li>click-silly</li>
-<li>click-simple</li>
-<li>click-simple-double</li>
-<li>click-simple-resonant</li>
-<li>click-woody</li>
-<li>confirm-bass</li>
-<li>confirm-blip</li>
-<li>confirm-detuned</li>
-<li>confirm-echo</li>
-<li>confirm-echo2</li>
-<li>confirm-melodic</li>
-<li>confirm-melodic2</li>
-<li>confirm-melodic3</li>
-<li>confirm-melodic4</li>
-<li>confirm-melodic5</li>
-<li>confirm-retro</li>
-<li>confirm-techy</li>
-<li>confirm-techy2</li>
-<li>confirm-xylophone</li>
-<li>confirm-xylophone2</li>
-<li>deny-analogue</li>
-<li>deny-bass</li>
-<li>deny-bass2</li>
-<li>deny-bass3</li>
-<li>deny-bass4</li>
-<li>deny-echo</li>
-<li>deny-electric</li>
-<li>deny-electric2</li>
-<li>deny-jar</li>
-<li>deny-note</li>
-<li>deny-retro</li>
-<li>hover-doubleclick</li>
-<li>hover-metallic</li>
-<li>hover-pop</li>
-<li>hover-sub-bass</li>
-<li>hover-sub-bass2</li>
-<li>hover</li>
-<li>hover2</li>
-<li>hover3</li>
-<li>hover4</li>
-<li>hover5</li>
-<li>whoosh-sub-bass</li>
-<li>whoosh</li>
-<li>whoosh2</li>
-<li>whoosh3</li>
-<li>whoosh4</li>
-<li>whoosh5</li>
-<li>whoosh6</li>
-<li>whoosh7</li>
-</ul>
+        <h3>Alerts</h3>
+        <ul>
+        <li><a href="#" onclick="return false;" data-sound-click="alert-click">alert-click</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="alert-echo">alert-echo</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="alert-electric">alert-electric</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="alert-flick">alert-flick</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="alert-triangle">alert-triangle</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="alert-wobble">alert-wobble</a></li>
+        </ul>
+        <h3>Clicks</h3>
+        <ul>
+        <li><a href="#" onclick="return false;" data-sound-click="click-analogue">click-analogue</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="click-analogue2">click-analogue2</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="click-analogue3">click-analogue3</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="click-blip">click-blip</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="click-footfall">click-footfall</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="click-melodic">click-melodic</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="click-melodic2">click-melodic2</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="click-pistachio">click-pistachio</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="click-pistachio2">click-pistachio2</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="click-pistachio3">click-pistachio3</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="click-pop">click-pop</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="click-retro">click-retro</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="click-round-pop">click-round-pop</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="click-round-pop2">click-round-pop2</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="click-round-pop3">click-round-pop3</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="click-silly">click-silly</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="click-simple">click-simple</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="click-simple-double">click-simple-double</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="click-simple-resonant">click-simple-resonant</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="click-woody">click-woody</a></li>
+        </ul>
+        <h3>Confirms</h3>
+        <ul>
+        <li><a href="#" onclick="return false;" data-sound-click="confirm-bass">confirm-bass</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="confirm-blip">confirm-blip</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="confirm-detuned">confirm-detuned</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="confirm-echo">confirm-echo</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="confirm-echo2">confirm-cho2</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="confirm-melodic">confirm-melodic</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="confirm-melodic2">confirm-melodic2</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="confirm-melodic3">confirm-melodic3</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="confirm-melodic4">confirm-melodic4</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="confirm-melodic5">confirm-melodic5</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="confirm-retro">confirm-retro</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="confirm-techy">confirm-techy</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="confirm-techy2">confirm-techy2</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="confirm-xylophone">confirm-xylophone</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="confirm-xylophone2">confirm-xylophone2</a></li>
+        </ul>
+        <h3>Denies</h3>
+        <ul>
+        <li><a href="#" onclick="return false;" data-sound-click="deny-analogue">deny-analogue</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="deny-bass">deny-bass</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="deny-bass2">deny-bass2</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="deny-bass3">deny-bass3</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="deny-bass4">deny-bass4</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="deny-echo">deny-echo</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="deny-electric">deny-electric</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="deny-electric2">deny-electric2</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="deny-jar">deny-jar</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="deny-note">deny-note</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="deny-retro">deny-retro</a></li>
+        </ul>
+        
+        <h3>Hovers</h3>
+        <ul>
+        <li><a href="#" onclick="return false;" data-sound-click="hover-doubleclick">hover-doubleclick</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="hover-metallic">hover-metallic</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="hover-pop">hover-pop</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="hover-sub-bass">hover-sub-bass</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="hover-sub-bass2">hover-sub-bass2</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="hover">hover-hover</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="hover2">hover-hover2</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="hover3">hover-hover3</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="hover4">hover-hover4</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="hover5">hover-hover5</a></li>
+        </ul>
+        <h3>Whooshes</h3>
+        <ul>
+        <li><a href="#" onclick="return false;" data-sound-click="whoosh-sub-bass">whoosh-sub-bass</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="whoosh">whoosh</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="whoosh2">whoosh2</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="whoosh3">whoosh3</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="whoosh4">whoosh4</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="whoosh5">whoosh5</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="whoosh6">whoosh6</a></li>
+        <li><a href="#" onclick="return false;" data-sound-click="whoosh7">whoosh7</a></li>
+        </ul>
+            
+
+
 </li>
 </ol>
 
@@ -148,13 +164,6 @@
 <li>Sounds used in this kit were created by Fran at <a href="http://www.narfstuff.co.uk/2009/09/13/royalty-free-ui-sound-pack-now-free/">narfstuff.co.uk</a> </li>
 </ul>
 
-<h2>
-<a id="to-do" class="anchor" href="#to-do" aria-hidden="true"><span class="octicon octicon-link"></span></a>To do</h2>
-
-<ul>
-<li>Remove jQuery dependency some day... </li>
-</ul>
-
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/hellodaniel/soundkit.js">Soundkit.js</a> is maintained by <a href="https://github.com/hellodaniel">hellodaniel</a>.</span>
 
@@ -162,7 +171,8 @@
       </footer>
 
     </section>
-
+    
+    <script src="js/soundkit.js"></script>
   
   </body>
 </html>
