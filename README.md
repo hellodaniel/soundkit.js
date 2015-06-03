@@ -1,9 +1,11 @@
 # soundkit.js
 jQuery/HTML5 sound UI kit for web applications. 
 
+[http://hellodaniel.github.io/soundkit.js](View demo)
+
 ## Requirements
  * Requires jQuery >= 1.11.2
- 
+
 ##Basic Usage
 
 Call direct from javascript `$.soundkit('sound-to-play')` or: 
