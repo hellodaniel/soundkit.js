@@ -1,14 +1,13 @@
 # soundkit.js
 jQuery/HTML5 sound UI kit for web applications. 
 
-## Why
-Subtle responses to web interactions can be useful and provide a richer user experience. It's that simple. The web has been quiet for too long. 
-
 ## Requirements
- * Requires jQuery (any version)
- * Script tag must be placed after jQuery and after any objects containing tags to be loaded
+ * Requires jQuery >= 1.11.2
  
 ##Basic Usage
+
+Call direct from javascript `$.soundkit('sound-to-play')` or: 
+
 1. Include the javascript file as close to the end of your `<body>` as possible
 
   ```html
