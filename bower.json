@@ -1,0 +1,14 @@
+{
+  "name": "soundkit.js",
+  "version": "0.0.1",
+  "authors": [
+    "author <hellodaniel@mac.com>"
+  ],
+  "description": "A sound library for web application UI",
+  "main": "soundkit.min.js",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "jquery": "~1.11.2"
+  }
+}
